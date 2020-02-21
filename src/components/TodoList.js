@@ -1,7 +1,18 @@
-import React from 'react';
+import React from "react";
 
-const TodoList = () => {
-return <div> TodoList rendered</div>
+class TodoList extends React.Component {
+  render() {
+    return (
+      <div className="todoListMain">
+        <div className="header">
+          <form>
+            <input placeholder="Task"/>
+            <button type="submit"> Add Task</button>
+          </form>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default TodoList;
