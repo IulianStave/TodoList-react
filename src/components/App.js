@@ -19,8 +19,7 @@ class App extends React.Component {
     };
   }
   handleInput = e => {
-    const itemText = e.target.value;
-    const currentItem = { text: itemText, key: Date.now() };
+    const currentItem = { text: e.target.value, key: Date.now() };
     this.setState({
       currentItem
     });
@@ -30,7 +29,7 @@ class App extends React.Component {
     e.preventDefault();
     const newItem = this.state.currentItem;
     if (newItem.text !== "") {
-      console.log(newItem);
+      console.log('Adding new item' +newItem);
       const items = [...this.state.items, newItem];
       this.setState({
         items: items,
