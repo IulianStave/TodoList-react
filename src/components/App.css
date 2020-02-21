@@ -78,3 +78,10 @@ body {
       color: #ffffff;
       cursor: pointer;
   }
+  h3.disclaimer {
+      color:#223123;
+      font-size:12px;
+      padding: 15px;
+      font-weight:normal;
+
+  }
