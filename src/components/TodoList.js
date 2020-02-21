@@ -11,7 +11,7 @@ class TodoList extends React.Component {
       <div className="todoListMain">
         <div className="header">
           <form onSubmit={this.props.addItem}>
-            <input 
+            <input autofocus="true"
               placeholder="Task"
               ref={this.props.inputElement}
               value={this.props.currentItem.text}
